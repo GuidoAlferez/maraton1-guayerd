@@ -1,0 +1,463 @@
+* {
+
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+}
+
+
+
+body {
+
+  font-family: 'Nunito', sans-serif;
+
+  color: #384047;
+
+}
+
+
+
+h1 {
+
+    text-align: center;
+
+    padding: 20px;
+
+    font-size: 45px;
+
+}
+
+
+
+.maraton {
+
+    display: flex;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 4px 10px;
+
+}
+
+
+
+.maraton > div {
+
+    border: 1px solid #5fcf80;
+
+    border-radius: 10px;
+
+}
+
+
+
+.contenedor {
+
+  padding: 1em;
+
+  margin: 0.5em 0;
+
+  background-color: #f4f7f8;
+
+}
+
+
+
+.ej1, .ej2, .ej3,
+
+.ej6, .ej7, .ej8 {
+
+    flex-basis: 30%;
+
+}
+
+
+
+.ej4, .ej5 {
+
+    flex-basis: 45%;
+
+}
+
+
+
+ .ej9 {
+
+    flex-basis: 35%;
+
+ } 
+
+ 
+
+ .ej10 {
+
+    flex-basis: 55%;
+
+ }
+
+
+
+legend {
+
+  font-size: 1.4em;
+
+  margin-bottom: 20px;
+
+}
+
+
+
+.number {
+
+  background-color: #5fcf80;
+
+  color: #fff;
+
+  height: 30px;
+
+  width: 30px;
+
+  display: inline-block;
+
+  font-size: 0.8em;
+
+  margin-right: 4px;
+
+  line-height: 30px;
+
+  text-align: center;
+
+  text-shadow: 0 1px 0 rgba(255,255,255,0.2);
+
+  border-radius: 100%;
+
+}
+
+
+
+input, select {
+
+    border: none;
+
+    font-size: 16px;
+
+    height: auto;
+
+    padding: 10px;
+
+    background-color: #e8eeef;
+
+    color: #8a97a0;
+
+    box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+
+    border-radius: 5px;
+
+}
+
+
+
+label {
+
+  margin-right: 10px;
+
+  display: inline-block;
+
+  width: 60px;
+
+}
+
+
+
+.mensajeResul {
+
+    margin-top: 20px;
+
+    color: #fff;
+
+    background-color: #5fcf80;
+
+    text-align: center;
+
+    font-size: 18px;
+
+    border-radius: 8px;
+
+    padding: 15px;
+
+}
+
+
+
+/* Ej 2 */
+
+.ej2-resultado {
+
+  display: none;
+
+}
+
+
+
+button {
+
+  color: #1d6131;
+
+  background-color: #4bc970;
+
+  font-size: 18px;
+
+  text-align: center;
+
+  font-style: normal;
+
+  border-radius: 5px;
+
+  width: 90%;
+
+  border: 1px solid #1d6131;
+
+  box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
+
+  padding-top: 10px;
+
+  padding-bottom: 10px;
+
+  margin-top: 30px
+
+}
+
+
+
+
+
+/* Ej 4 */
+
+.ej4, .ej5, .ej10  {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+}
+
+
+
+.ej4 legend, .ej5 legend, .ej10 legend {
+
+    flex-basis: 100%;
+
+}
+
+
+
+.ej4 > div:first-of-type,
+
+.ej10 > div:first-of-type{
+
+    flex-basis: 50%;
+
+}
+
+
+
+.ej4 > div:first-of-type input, label {
+
+    margin-top: 10px;
+
+}
+
+
+
+.ej4 .ej4-resultado {
+
+    flex-basis: 40%;
+
+    text-align: start;
+
+    display: none;
+
+}
+
+
+
+.ej10 .ej10-resultado {
+
+    flex-basis: 40%;
+
+    text-align: start;
+
+    display: none;
+
+}
+
+
+
+.error {
+
+  border: 1px solid red;
+
+}
+
+
+
+.error2 {
+
+  border: 1px solid purple;
+
+}
+
+
+
+
+
+/* Ej 5 */
+
+.ej5  input, label {
+
+    margin-top: 10px;
+
+}
+
+
+
+.ej5 .ej5-resultado {
+
+    flex-basis: 40%;
+
+    text-align: start;
+
+    display: none;
+
+}
+
+
+
+/* Ej 7 */
+
+
+
+select.momentos {
+
+  margin-bottom: 20px;
+
+}
+
+
+
+.ej7-resultado {
+
+  text-align: start;
+
+  display: none;
+
+}
+
+
+
+/* Ej 8*/
+
+.ej8-resultado {
+
+    text-align: start;
+
+    display: none;
+
+    margin-top: 20px;
+
+    font-size: 18px;
+
+}
+
+
+
+.ej8 label {
+
+    width: 80px;
+
+}
+
+
+
+.passError {
+
+  color: red;
+
+}
+
+
+
+.passOk {
+
+  color: green;
+
+}
+
+
+
+/* Ej 9 */
+
+.usuario-contenedor{
+
+  padding: 0.2em;
+
+  width: 90%;
+
+  margin: 0.5em 0;
+
+  margin-bottom: 20px;
+
+  border: 1px dashed #4bc970;
+
+}
+
+
+
+.usuario-contenedor div {
+
+  margin: 0.5em 0;
+
+}
+
+
+
+.usuario-contenedor span {
+
+  margin: 0 0.5em;
+
+}
+
+
+
+.usuario-contenedor .title {
+
+  font-weight: bold;
+
+  font-size: large;
+
+}
+
+
+
+/* Ej 10 */
+
+.ej10-form input, .ej10-form select  {
+
+  margin-bottom: 10px;
+
+  margin-left: 10px;
+
+}
+
+
+
+/* .ej10 p {
+
+    font-size: 10px;
+
+} */
